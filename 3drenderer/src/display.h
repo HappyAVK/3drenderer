@@ -22,6 +22,8 @@ void draw_grid(void); ///Comment these later
 
 void draw_rect(int x, int y, int width, int height, uint32_t color); ///Comment these later
 
+void draw_pixel(int x, int y, uint32_t colour);
+
 void render_color_buffer(void); ///Comment these later
 
 void clear_color_buffer(uint32_t color); ///Comment these later
