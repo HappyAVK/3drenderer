@@ -16,6 +16,11 @@ typedef struct {
 	
 } vec3_t;
 
+
+vec3_t vec3_rotate_x(vec3_t v, float angle);
+vec3_t vec3_rotate_y(vec3_t v, float angle);
+vec3_t vec3_rotate_z(vec3_t v, float angle);
+
 // TODO: Add functions to manipulate 2d and 3d vectors
 
 #endif
