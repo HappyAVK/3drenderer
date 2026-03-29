@@ -34,6 +34,9 @@ void clear_color_buffer(uint32_t color); ///Comment these later
 
 void destroy_window(void); ///Comment these later
 
+void draw_line(int x0, int x1, int y0, int y1, int32_t colour);
+
+void draw_triangle(int x0, int y0, int x1, int y1, int x2, int y2, uint32_t colour);
 
 
 #endif

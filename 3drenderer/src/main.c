@@ -9,7 +9,7 @@
 
 triangle_t triangles_to_render[N_MESH_FACES];
 
-vec3_t camera_position = {.x =0, .y = 0, .z = -10};
+vec3_t camera_position = {.x =0, .y = 0, .z = -5};
 
 vec3_t cube_rotation = {.x = 0, .y = 0, .z = 0};
 
@@ -37,8 +37,8 @@ void setup(void){
 // Receive a 3d vector and return as a 2d point (not Orthographic???)
 vec2_t project(vec3_t point){
 	vec2_t projected_point = {
-		.x = ((fov_factor * point.x) / point.z) +(window_width /4),
-		.y= ((fov_factor * point.y) / point.z) +(window_height /4)
+		.x = (fov_factor * point.x) / point.z ,
+		.y= (fov_factor * point.y) / point.z
 	};
 	return projected_point;
 }
@@ -70,8 +70,8 @@ void update(void){
 		for (int j = 0; j <3; j++){
 			vec3_t transformed_vertex = face_vertices[j];
 			
-			vec3_t transformed_point = vec3_rotate_y(transformed_vertex, cube_rotation.y);
-			transformed_point = vec3_rotate_x(transformed_point, cube_rotation.y);
+			vec3_t transformed_point = vec3_rotate_x(transformed_vertex, cube_rotation.x);
+			transformed_point = vec3_rotate_y(transformed_point, cube_rotation.y);
 			transformed_point = vec3_rotate_z(transformed_point, cube_rotation.z);
 			
 			transformed_point.z -= camera_position.z;
@@ -79,6 +79,9 @@ void update(void){
 			//project the current vertex
 			
 			vec2_t projected_point = project(transformed_point);
+			
+			projected_point.x += (window_width /2);
+			projected_point.y += (window_height / 2);
 			
 			projected_triangle.points[j] = projected_point;
 			
@@ -114,25 +117,30 @@ void render(void){
 	//SDL_SetRenderDrawColor(renderer, 255, 0 ,0 ,255);
 	//SDL_RenderClear(renderer);
 	
-	//draw_grid();
-	
+	draw_grid();
+
 	//loop through all projected triangles and render
 
 	for (int i = 0; i < N_MESH_FACES; i++){
 		triangle_t projected_tri = triangles_to_render[i];
 		//loop through projected triangles and their point values
 		for (int j = 0; j < 3; j++){
-			
+
 			draw_rect(
-				projected_tri.points[j].x , 
-				projected_tri.points[j].y , 
-			4, 
-			4, 
+				projected_tri.points[j].x ,
+				projected_tri.points[j].y ,
+			3,
+			3,
 			0xFFFFFF00);
 		};
-			
-		}
 		
+		draw_triangle(projected_tri.points[0].x, projected_tri.points[0].y, 
+		projected_tri.points[1].x, projected_tri.points[1].y, 
+		projected_tri.points[2].x, projected_tri.points[2].y, 
+		0xFFFF69B4);
+
+		}
+	//draw_line(100, 200, 300, 600, 0xFFFF69B4);	
 //
  	render_color_buffer();
 //

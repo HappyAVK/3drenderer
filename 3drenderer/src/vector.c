@@ -25,7 +25,7 @@ vec3_t vec3_rotate_z(vec3_t v, float angle){
 	{
 		vec3_t rotated_vector = {
 			.x = v.x *cos(angle) - v.y * sin(angle),
-			.y = v.y * cos(angle) + v.x * sin(angle),
+			.y = v.x * sin(angle) + v.y * cos(angle),
 			.z = v.z
 		};
 		return rotated_vector;
