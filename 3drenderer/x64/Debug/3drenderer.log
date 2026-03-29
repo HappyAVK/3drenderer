@@ -1,1 +1,28 @@
-﻿  3drenderer.vcxproj -> C:\Users\butte\source\repos\HappyAVK\3drenderer\x64\Debug\3drenderer.exe
+﻿  display.c
+  main.c
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\display.c(90,14): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\display.c(90,32): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\display.c(86,20): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\display.c(87,20): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(51,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(52,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(53,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(130,28): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(131,28): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(137,40): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(137,67): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(138,26): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(138,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(139,26): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(139,53): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(172,10): warning C4026: function declared with formal parameter list
+  vector.c
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\vector.c(9,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\vector.c(10,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\vector.c(17,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\vector.c(19,26): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\vector.c(27,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\vector.c(28,26): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(186,1): warning C4716: 'SDL_main': must return a value
+  3drenderer.vcxproj -> C:\Users\butte\source\repos\HappyAVK\3drenderer\x64\Debug\3drenderer.exe
