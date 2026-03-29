@@ -1,0 +1,11 @@
+﻿  display.c
+  main.c
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(51,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(52,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(53,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(127,28): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(128,28): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(164,10): warning C4026: function declared with formal parameter list
+  Generating Code...
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\main.c(178,1): warning C4716: 'SDL_main': must return a value
+  3drenderer.vcxproj -> C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\Debug\3drenderer.exe

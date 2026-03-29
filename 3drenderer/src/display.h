@@ -3,8 +3,9 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include <SDL2/SDL.h>
-
+#include <SDL.h>
+#include <stdlib.h>
+#include <stdio.h>
 #define FPS 30
 #define FRAME_TARGET_TIME (1000 / FPS)// how many miliseconds?
 

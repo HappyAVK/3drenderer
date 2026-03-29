@@ -1,0 +1,5 @@
+﻿  display.c
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\display.c(17,3): warning C4013: 'fprintf' undefined; assuming extern returning int
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\display.c(17,11): error C2065: 'stderr': undeclared identifier
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\display.c(31,11): error C2065: 'stderr': undeclared identifier
+C:\Users\butte\source\repos\HappyAVK\3drenderer\3drenderer\src\display.c(38,11): error C2065: 'stderr': undeclared identifier
